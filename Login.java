@@ -1,8 +1,8 @@
 import java.util.Scanner;
 public class Login{
-    String result = "";
  public static void main(String[] args){
   Scanner scanner = new Scanner(System.in);
+    String result = "";
   
   System.out.print("Enter username: ");
   String username = scanner.nextLine();
@@ -12,6 +12,7 @@ public class Login{
   
   if(username.equals("admin") && password.equals("password123")){
    System.out.println("Ok");
+   result = "Success";
   } else {
    System.out.println("Invalid username or password.");
   }
